@@ -1,0 +1,3 @@
+tool,db_name,db_params,db_type,db_path
+kraken2,custom_mag_db-kraken2,,,/home/jbentes/projects/bioinformatics/nf_core_taxprofiler/custom_create_tax_db_for_MAGs/pipeline_build_taxdb/runs/build_taxdb_20260322_182139/custom_mag_db/kraken2/custom_mag_db-kraken2
+bracken,custom_mag_db-bracken,,,/home/jbentes/projects/bioinformatics/nf_core_taxprofiler/custom_create_tax_db_for_MAGs/pipeline_build_taxdb/runs/build_taxdb_20260322_182139/custom_mag_db/bracken/custom_mag_db-bracken

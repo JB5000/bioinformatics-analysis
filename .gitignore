@@ -1,0 +1,44 @@
+# Generic
+.DS_Store
+*.swp
+*.tmp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Nextflow and workflow runtime artifacts
+work/
+.nextflow/
+.nextflow*
+*.nextflow.log*
+
+# HPC scheduler logs
+*.out
+*.err
+slurm-*.out
+
+# Large bioinformatics outputs
+results/
+outdir/
+*.bam
+*.bai
+*.cram
+*.crai
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.fasta
+*.fa
+*.fna
+*.sam
+*.vcf
+*.vcf.gz
+
+# Databases and caches
+db/
+databases/
+.cache/

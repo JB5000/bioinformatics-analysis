@@ -1,0 +1,2 @@
+tool,db_name,db_params,db_path
+krakenuniq,krakenuniq_standard,"","/home/data/nf-core-mag-libs/krakenUniq_20220616_standard"

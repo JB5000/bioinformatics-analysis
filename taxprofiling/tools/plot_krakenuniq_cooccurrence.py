@@ -29,6 +29,24 @@ def add_rho_distribution(ax: plt.Axes, edges: pd.DataFrame) -> None:
     ax.axvline(0.0, color="black", linewidth=1.0, linestyle="--")
 
 
+def add_top_associations(ax: plt.Axes, edges: pd.DataFrame, top_n: int = 8) -> None:
+    significant = edges[edges["q_value"] <= 0.05].copy()
+    if significant.empty:
+        ax.set_title("Top Associations")
+        ax.text(0.5, 0.5, "No significant edges", ha="center", va="center")
+        ax.axis("off")
+        return
+
+    top_pos = significant.nlargest(top_n // 2, "rho")
+    top_neg = significant.nsmallest(top_n // 2, "rho")
+    combined = pd.concat([top_neg, top_pos], axis=0)
+    labels = [f"{l}|{r}" for l, r in zip(combined["taxon_left"], combined["taxon_right"])]
+    colors = ["#d62728" if value < 0 else "#2ca02c" for value in combined["rho"]]
+    ax.barh(labels, combined["rho"], color=colors, alpha=0.9)
+    ax.set_title("Top Positive/Negative Associations")
+    ax.set_xlabel("Spearman rho")
+
+
 def main() -> int:
     args = parse_args()
     edges = load_edges(args.edges)

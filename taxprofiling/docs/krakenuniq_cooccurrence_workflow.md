@@ -29,3 +29,10 @@ m.index.name = 'sample_id'
 m.to_csv('krakenuniq_krakenuniq_standard.transposed.tsv', sep='\t')
 PY
 ```
+
+## Output Files
+- `cooccurrence_edges.csv`: pairwise taxa correlations with p/q values.
+- `cooccurrence_nodes.csv`: node-level metrics.
+- `cooccurrence_network.gexf`: graph for Gephi/Cytoscape.
+- `ratio_matrix.csv`: log-ratios among top taxa.
+- `summary.json`: high-level run metadata.

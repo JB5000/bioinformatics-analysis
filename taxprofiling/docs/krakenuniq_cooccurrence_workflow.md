@@ -44,6 +44,11 @@ python taxprofiling/tools/plot_krakenuniq_cooccurrence.py \
   --output taxprofiling/results/krakenuniq_taxonomy_only/cooccurrence_summary.png
 ```
 
+## One-Command Redo
+```bash
+bash taxprofiling/scripts/run_krakenuniq_taxonomy_only_redo.sh
+```
+
 ## Interpretation Checklist
 - Prioritize edges with low q-value and large |rho|.
 - Inspect both positive and negative associations.

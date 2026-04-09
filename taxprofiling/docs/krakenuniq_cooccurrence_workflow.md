@@ -36,3 +36,9 @@ PY
 - `cooccurrence_network.gexf`: graph for Gephi/Cytoscape.
 - `ratio_matrix.csv`: log-ratios among top taxa.
 - `summary.json`: high-level run metadata.
+
+## Interpretation Checklist
+- Prioritize edges with low q-value and large |rho|.
+- Inspect both positive and negative associations.
+- Check whether highly connected taxa are biologically plausible.
+- Treat correlations as hypotheses, not causal links.

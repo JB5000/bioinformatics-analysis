@@ -17,3 +17,15 @@ python taxprofiling/tools/analyze_cooccurrence_and_ratios.py \
   --max-taxa 40 \
   --ratio-taxa 15
 ```
+
+## Matrix Orientation
+If your KrakenUniq export has taxa in rows and samples in columns, transpose first:
+
+```bash
+python - <<'PY'
+import pandas as pd
+m = pd.read_csv('krakenuniq_krakenuniq_standard.tsv', sep='\t').set_index('taxonomy_id').T
+m.index.name = 'sample_id'
+m.to_csv('krakenuniq_krakenuniq_standard.transposed.tsv', sep='\t')
+PY
+```

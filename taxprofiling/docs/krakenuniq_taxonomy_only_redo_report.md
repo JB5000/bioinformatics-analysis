@@ -36,3 +36,9 @@
 - Strong negative edges suggest potential niche partitioning or mutually exclusive dynamics.
 - The graph is fully connected with selected taxa, indicating broad shared structure in the selected high-prevalence subset.
 - High-degree taxa should be prioritized for downstream ecological hypothesis testing.
+
+## Caveats and Next Steps
+- Correlation does not imply causality; validate with targeted models.
+- Taxon IDs should be mapped to names/ranks before biological interpretation.
+- Repeat analysis with stricter prevalence thresholds for robustness.
+- Compare season/size-fraction subsets to test context-specific associations.

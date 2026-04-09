@@ -30,3 +30,9 @@
 | 2563896 | 43989 | -0.9290 | 5.61e-22 |
 | 335992 | 111780 | -0.9232 | 3.48e-21 |
 | 2563896 | 111780 | -0.9208 | 7.15e-21 |
+
+## Interpretation Notes
+- The strongest positive edges suggest taxa groups that repeatedly increase/decrease together across the 52 samples.
+- Strong negative edges suggest potential niche partitioning or mutually exclusive dynamics.
+- The graph is fully connected with selected taxa, indicating broad shared structure in the selected high-prevalence subset.
+- High-degree taxa should be prioritized for downstream ecological hypothesis testing.

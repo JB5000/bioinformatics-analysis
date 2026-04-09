@@ -50,8 +50,14 @@ def add_top_associations(ax: plt.Axes, edges: pd.DataFrame, top_n: int = 8) -> N
 def main() -> int:
     args = parse_args()
     edges = load_edges(args.edges)
+    figure, axes = plt.subplots(1, 2, figsize=(16, 6), constrained_layout=True)
+    add_rho_distribution(axes[0], edges)
+    add_top_associations(axes[1], edges, top_n=10)
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    figure.savefig(args.output, dpi=180)
+    plt.close(figure)
     print(f"Loaded {len(edges)} edges")
-    print(f"Will write figure to: {args.output}")
+    print(f"Saved plot to: {args.output}")
     return 0
 
 

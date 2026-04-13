@@ -9,5 +9,9 @@ Central repository for bioinformatics workflows, scripts, and project modules.
 - `common/`: shared utilities
 - `docs/`: workflow notes and usage docs
 
+## Recent Updates
+- [2026-04-13] - Added `common/scripts/nanopore_gbases_by_date.py` to estimate nanopore gigabases by date and export CSV/HTML/log outputs - Document archived sample-yield visualization workflow.
+- [2026-04-13] - Added `docs/nanopore_gbases_by_date.md` with run instructions and output description - Make the utility reproducible by other users.
+
 ## Notes
 This repository is organized to keep multiple bioinformatics projects under one place while preserving domain-specific subfolders.
